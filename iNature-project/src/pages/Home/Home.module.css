@@ -1,0 +1,48 @@
+
+.main{
+    background-image: url("/src/assets/img/earth-light.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.textShadow{
+    text-shadow: 0px 0px 5px white;
+}
+.textShadow{
+    text-shadow: 0px 0px 8px black;
+}
+
+/* services section  */
+.serviceSec{
+    background-image: url("/src/assets/img//light-map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    color: white;
+    text-align: center;
+}
+
+/* about banner */
+.aboutBanner{
+    background-image: url("/src/assets/img//mountainTop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.aboutBox{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+}
+.button{
+    background-color:  rgb(253,224,71);
+    border-radius: 20px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+.button:hover{
+    background: transparent;
+    color: white;
+    border: 2px solid rgb(253,224,71);
+}
