@@ -7,9 +7,9 @@ export const navLinks=[
       path:"/"
     },
     {
-      id: "services",
-      title: "Services",
-      path:"/services"
+      id: "monitoring",
+      title: "Monitor",
+      path:"/monitoring"
     },
     {
         id:'about',
@@ -51,7 +51,7 @@ export const navLinks=[
       {
         id:4,
         title:'SEO',
-        description:'We provide thWe provide the best  ldngdf  ng;ldgld ldgnldgldg ldgjgdklgjdfkl fjkjnjdng ldngdf  ng;ldgld ldgnldgldg ldgjg dklgjdfkl fjkjnjdng ldngdf  ng;ldgld ldgnldgldg ldgjgdklgjdfkl fjkjnjdng ldngdf  ng;ldgld ldgnldgldg ldgjgdklgjdfkl fjkjnjdng ldngdf  ng;ldgld ldgnldge best services for our clients',
+        description:'We provide thWe provide the best  ldngdf  ng;ldgld ldgnldgldg ldgjgdklgjdfkl fjkjnjdng ldngdf  ng;ldgld ldgnldgldg ldgjg dklgjdfkl fjkjnjdng ldngdf  ng;ldgld ldgnldgldg ldgjgdklgjng ldngdf  ng;ldgld ldgnldge best services for our clients',
         icon:'seo.png'
       },
       ]

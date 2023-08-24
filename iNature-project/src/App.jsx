@@ -8,6 +8,7 @@ import Contact from './pages/Contact/Contact';
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import { Route, Routes } from 'react-router-dom'
+import Moniotoring from './pages/Monitoring/Moniotoring';
 
 export default function App() {
 
@@ -19,6 +20,7 @@ export default function App() {
         <Route path='/about' element={<About />} />
         <Route path='/team' element={<Team />} />
         <Route path='/contact' element={<Contact/>} />
+        <Route path='/monitoring' element={<Moniotoring/>}/>
       </Routes>
     </div>
 

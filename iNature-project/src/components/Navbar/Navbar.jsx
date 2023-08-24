@@ -10,7 +10,7 @@ export default function Navbar() {
   const [active, setActive] = useState("Home");
 
   return (
-    <nav className={`${styles.navbar} px-6 w-full flex items-center py-4 fixed top-0 border-bottom border-b border-emerald-500`}>
+    <nav className={`${styles.navbar} px-6 w-full flex items-center py-[16px] fixed top-0 border  border-emerald-500`}>
 
       <div className='w-full flex items-center justify-between gap-5 max-w-7xl mx-auto'>
 

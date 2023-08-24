@@ -10,23 +10,24 @@ import Footer from '../../components/Footer/Footer.jsx'
 export default function Home() {
   return (
     <>
-      <section className={`w-full h-[500px]  `}>
+      <section className={` w-full h-[500px] border border-emerald-400`}>
 
         <div className={`${styles.main} w-full h-full flex`}>
 
-          <div className={`${styles.textShadow} w-1/2 h-full flex flex-col justify-center items-start pl-32 text-black `}>
-            <h1 className={`text-7xl font-bold `}>Welcome to<br /><span className={`text-black`}>Map</span> App</h1>
+          <div className={`${styles.textShadow} ${styles.mainSection}  w-1/2 h-full flex flex-col justify-center items-start pt-16 pl-32 ${styles.mainHeading} text-emerald-400 `}>
+            <h1 className={`text-6xl font-bold `}>Welcome to<br /><span className={`text-emerald-400`}>Forest</span> Monitoring Application</h1>
             <p className={`text-2xl mt-5 font-extrabold text-shadow-white`}>Find your location and explore the world</p>
           </div>
+          <div className={`w-1/2 ${styles.mainSection}`}></div>
 
         </div>
 
       </section>
       {/* services section start ---> */}
 
-      <section className={`w-full h-[600px] border border-emerald-400`}>
+      <section id='serv' className={`w-full h-[680px] border-2 border-emerald-400`}>
 
-        <div className={`w-[full] h-[15%] bg-neutral-950 flex justify-center items-center border-b border-emerald-400`}>
+        <div className={`w-[full] h-[10%] bg-neutral-950 flex justify-center items-center border-b border-emerald-400`}>
           <h2 className='font-bold text-3xl  text-emerald-400'>
             <span>|| </span>
             OUR SERVICES!
@@ -39,11 +40,18 @@ export default function Home() {
           </h2> */}
         </div>
 
-        <div className={`${styles.serviceSec} h-[85%] flex flex-wrap gap-6 items-center justify-center`}>
+        <div className={`${styles.serviceSec} h-[90%] flex flex-wrap gap-6 items-center justify-center`}>
 
-          {services.map((service) => (
-            <ServiceCard key={service.id} service={service} />
-          ))}
+          <div className='h-[90%] flex flex-wrap gap-x-6 items-center justify-center'>
+            {services.map((service) => (
+              <ServiceCard key={service.id} service={service} />
+            ))}
+          </div>
+          <div className='h-[10%] mt-[-30px] flex flex-col'>
+            <div className='w-[600px] '>
+              <Link to='/monitoring' className={`${styles.buttonServ} w-full  text-lg font-bold `} >Let's Monitor</Link>
+            </div>
+          </div>
 
         </div>
 
@@ -82,7 +90,7 @@ export default function Home() {
       </section>
       {/* footer start ---> */}
       <section className={`w-full h-fit  bg-black border-2 border-white`}>
-          <Footer/>
+        <Footer />
       </section>
 
 
