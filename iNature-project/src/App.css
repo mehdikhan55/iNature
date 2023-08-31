@@ -1,7 +1,7 @@
 #root {
   max-width:100vw;
 }
-
+ 
 
 
 /* @media (prefers-reduced-motion: no-preference) {
@@ -118,4 +118,9 @@
   font-size: 1.2rem;
   font-weight: 700;
   color: black;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
 }

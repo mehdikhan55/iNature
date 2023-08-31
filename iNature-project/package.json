@@ -12,9 +12,12 @@
   "dependencies": {
     "@ant-design/icons": "^5.2.5",
     "@emailjs/browser": "^3.11.0",
+    "leaflet": "^1.9.4",
     "mdb-react-ui-kit": "^6.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
+    "react-modal": "^3.16.1",
     "react-router-dom": "^6.15.0",
     "styled-components": "^6.0.7"
   },

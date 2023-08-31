@@ -1,0 +1,20 @@
+.myBtn{
+    background-color: #34d399;
+    width: 100px;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.myBtn:hover{
+    background-color: black;
+    color: white;
+}
