@@ -2,21 +2,15 @@ import React, { useEffect, useState } from 'react'
 import styles from './SingleMap.module.css'
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import SingleCityMap from './SingleCityMap';
+import SingleKarachiMap from './SingleKarachiMap';
+import SingleIslamabadMap from './SingleIslamabadMap';
+import SingleAbbottabadMap from './SingleAbbottabadMap';
+import SingleLahoreMap from './SinglelLahoreMap';
 
 
 export default function SingleMap({ city, singleYear, setSingleYear }) {
-  const [theCenter,setTheCenter]=useState("");
+  
  
-  const calculateCenter = () => {
-    if (city === 'karachi') {
-        return [24.8607, 67.0011];
-    } else if (city === 'islamabad') {
-        return [33.6844, 73.0479];
-    } else {
-        return [24.8607, 67.0011]; // Default center
-    }
-};
 
   const handleYearChange = (e) => {
     if (e.target.value === '0') {
@@ -30,16 +24,14 @@ export default function SingleMap({ city, singleYear, setSingleYear }) {
     setSingleYear('');
   }, [])
 
-  useEffect(()=>{
-    setTheCenter(calculateCenter());
-  },[city])
+
 
 
 
   return (
     <div id='mapId' className='w-full h-full bg-red-700'>
       {/* <--year selectors start--->  */}
-      <div className="w-[20%] h-[10%] fixed bottom-3 left-1 bg-white rounded-md border-2 border-black p-1 shadow-black shadow-xl z-10">
+      <div className="w-[20%] h-[10%] fixed bottom-3 left-1 bg-white rounded-md border-2 border-black p-1 shadow-black shadow-xl z-30">
 
         <div className="flex w-[100%]  p-2 align-items-center gap-1">
           <select onChange={handleYearChange} className='w-[50%] bg-emerald-400 border-2 rounded border-black' name="singleYearSelection" id="singleYearSelection">
@@ -57,7 +49,10 @@ export default function SingleMap({ city, singleYear, setSingleYear }) {
 
       {/* <-- map start --> */}
 
-      {theCenter && <SingleCityMap theCenter={theCenter} setTheCenter={setTheCenter}/>}
+      {city==="karachi" && <SingleKarachiMap />}
+      {city==="islamabad" && <SingleIslamabadMap />}
+      {city==="abbottabad" && <SingleAbbottabadMap />}
+      {city==="lahore" && <SingleLahoreMap />}
       {/* <-- map end --> */}
 
     </div>

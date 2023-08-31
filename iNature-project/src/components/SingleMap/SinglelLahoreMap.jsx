@@ -2,16 +2,12 @@ import React, { useState, useEffect } from 'react'
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
-export default function SingleCityMap({ theCenter, setTheCenter }) {
+export default function SingleLahoreMap({ }) {
 
-
-    useEffect(() => {
-        console.log("center ye ha: ", theCenter)
-    })
-    
 
     return (
-        <MapContainer center={theCenter} zoom={12}>
+
+        <MapContainer className='z-10' center={[31.5204, 74.3587]} zoom={13}>
             {/* OPEN STREEN MAPS TILES */}
             {/* <TileLayer
       attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
