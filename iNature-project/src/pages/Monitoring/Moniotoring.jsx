@@ -4,7 +4,7 @@
   import Map from '../../components/Map/Map';
   import PreviewModal from '../../components/PreviewModal/PreviewModal';
 
-  export default function Moniotoring() {
+  export default function Moniotoring({active,setActive}) {
     const [city, setCity] = useState('karachi')
     const [showPreviewModal, setShowPreviewModal] = useState(false)
     const [previewMode, setPreviewMode] = useState('single')
@@ -12,6 +12,10 @@
     const [leftYear, setLeftYear] = React.useState('');
     const [rightYear, setRightYear] = React.useState('');
     const [singleYear, setSingleYear] = React.useState('');
+
+    React.useEffect(() => {
+      setActive("Monitor");
+    })
 
     useEffect(() => {
       console.log("Current city ye ha: ",city)
@@ -37,7 +41,7 @@
     }
 
     return (
-      <div className='w-full h-[100vh] position-absolute bg-red-600 flex-col mt-20'>
+      <div className='w-full h-[100vh] position-absolute bg-red-600 flex-col mt-20 z-10'>
 
         {
           showPreviewModal && <PreviewModal previewMode={previewMode} setPreviewMode={setPreviewMode} togglePreviewModal={togglePreviewModal} showPreviewModal={showPreviewModal} setShowPreviewModal />
@@ -55,7 +59,11 @@
             <h3 className='text-black font-bold text-lg'>City: {city}</h3>
           </div>
 
-
+        <div className=' w-[30%] flex items-center justify-center pr-32 '>
+        <div className=' w-[26px] h-[38px] rounded-3xl border-4 border-black z-0 flex justify-center items-start p-1'>
+              <div className={`${styles.bouncy} w-2 h-2 rounded-full bg-black mt-3`}></div>
+            </div>
+        </div>
 
           <div className="flex gap-2 pl-12 py-1 w-[30%] bg-blue-500">
             <button onClick={handlePreviewChange} className={`${styles.myBtn}`}>Preview</button>

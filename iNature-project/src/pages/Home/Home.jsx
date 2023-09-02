@@ -5,9 +5,14 @@ import { Link } from 'react-router-dom'
 import { services } from '../../constants'
 import ServiceCard from '../../components/ServiceCard/ServiceCard'
 import Footer from '../../components/Footer/Footer.jsx'
+import { motion } from 'framer-motion'
 
 
-export default function Home() {
+export default function Home({ active, setActive }) {
+  React.useEffect(() => {
+    setActive("Home");
+  }, [])
+
   return (
     <>
       <section className={` w-full h-[500px] border border-emerald-400`}>
@@ -18,7 +23,11 @@ export default function Home() {
             <h1 className={`text-6xl font-bold `}>Welcome to<br /><span className={`text-emerald-400`}>Forest</span> Monitoring Application</h1>
             <p className={`text-2xl mt-5 font-extrabold text-shadow-white`}>Find your location and explore the world</p>
           </div>
-          <div className={`w-1/2 ${styles.mainSection}`}></div>
+          <div className={`w-1/2 ${styles.mainSection} relative`}>
+
+
+          </div>
+
 
         </div>
 

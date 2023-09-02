@@ -18,3 +18,18 @@
     background-color: black;
     color: white;
 }
+
+/* Define the keyframes for the animation */
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); /* Initial and final state */
+    }
+    50% {
+      transform: translateY(-20px); /* Bounce up state */
+    }
+  }
+  
+  /* Apply the animation to the element */
+  .bouncy {
+    animation: bounce 1s ease infinite; /* Apply the 'bounce' animation */
+  }

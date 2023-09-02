@@ -11,16 +11,17 @@ import { Route, Routes } from 'react-router-dom'
 import Moniotoring from './pages/Monitoring/Moniotoring';
 
 export default function App() {
+  const [active, setActive] = useState("Home");
 
   return (
     <div className=" w-full p-0 ">
-      <Navbar />
+      <Navbar active={active} setActive={setActive}/>
       <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/about' element={<About />} />
-        <Route path='/team' element={<Team />} />
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/monitoring' element={<Moniotoring/>}/>
+        <Route path='/' element={<Home  active={active} setActive={setActive}/>} />
+        <Route path='/about' element={<About  active={active} setActive={setActive}/>} />
+        <Route path='/team' element={<Team  active={active} setActive={setActive}/>} />
+        <Route path='/contact' element={<Contact active={active} setActive={setActive}/>} />
+        <Route path='/monitoring' element={<Moniotoring active={active} setActive={setActive}/>}/>
       </Routes>
     </div>
 

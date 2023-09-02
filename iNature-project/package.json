@@ -12,7 +12,9 @@
   "dependencies": {
     "@ant-design/icons": "^5.2.5",
     "@emailjs/browser": "^3.11.0",
+    "framer-motion": "^10.16.2",
     "leaflet": "^1.9.4",
+    "leaflet-side-by-side": "^2.2.0",
     "mdb-react-ui-kit": "^6.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

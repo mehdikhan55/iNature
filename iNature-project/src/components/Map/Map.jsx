@@ -11,7 +11,7 @@ export default function Map({city, previewMode, leftYear, rightYear, setLeftYear
             {previewMode === 'single' ?
                 <SingleMap city={city}
                 singleYear={singleYear} setSingleYear={setSingleYear}
-            />
+            /> 
             :
             <CompareMap city={city}
                 leftYear={leftYear} rightYear={rightYear} setLeftYear={setLeftYear} setRightYear={setRightYear}

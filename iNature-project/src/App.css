@@ -124,3 +124,28 @@
   height: 100%;
   width: 100%;
 }
+
+
+/* CSS for split-screen layout */
+.split-screen-container {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split-screen-map {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* CSS for split-screen layout */
+.split-screen-divider {
+  width: 8px; /* Width of the divider */
+  cursor: col-resize; /* Set cursor to resize */
+  background-color: #ccc;
+  z-index: 1; /* Ensure it's above maps */
+  position: relative; /* Ensure proper positioning */
+}
+/* Apply these styles to ComIslamabadMap and ComKarachiMap as well */

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import styles from './SingleMap.module.css'
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import SingleKarachiMap from './SingleKarachiMap';
-import SingleIslamabadMap from './SingleIslamabadMap';
+import SingleIslamabadMap from './islamabadSingle/SingleIslamabadMap'
+import SingleKarachiMap from  './karachiSingle/SingleKarachiMap';
 import SingleAbbottabadMap from './SingleAbbottabadMap';
 import SingleLahoreMap from './SinglelLahoreMap';
 
