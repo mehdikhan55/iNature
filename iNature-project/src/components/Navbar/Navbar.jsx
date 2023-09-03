@@ -9,7 +9,7 @@ import MobileNavbar from '../MobileNavbar/MobileNavbar'
 export default function Navbar({active,setActive}) {
 
   return (
-    <nav className={`${styles.navbar} px-6 w-full flex items-center py-[16px] fixed top-0 border  border-emerald-500 z-1`}>
+    <nav className={`${styles.navbar} px-6 w-full flex items-center py-[12px] fixed top-0 border  border-emerald-500 z-1`}>
 
       <div className='w-full flex items-center justify-between gap-5 max-w-7xl mx-auto'>
 
@@ -21,7 +21,7 @@ export default function Navbar({active,setActive}) {
             window.scrollTo(0, 0);
           }}
         >
-          <img className={`${styles.myLogo} sm:min-w-[150px] w-[100px]`} src={logo} alt="logo" />
+          <img className={`${styles.myLogo} sm:min-w-[120px] w-[100px]`} src={logo} alt="logo" />
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>

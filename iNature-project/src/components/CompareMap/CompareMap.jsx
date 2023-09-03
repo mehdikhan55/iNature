@@ -15,16 +15,24 @@ export default function CompareMap({ city, leftYear, rightYear, setLeftYear, set
   };
 
   const handleLeftYearChange = (e) => {
-    // ... (your existing code)
-  };
-
+    if (e.target.value === '0') {
+      setLeftYear('')
+      return
+    }
+    setLeftYear(e.target.value);
+  }
   const handleRightYearChange = (e) => {
-    // ... (your existing code)
-  };
+    if (e.target.value === '0') {
+      setRightYear('')
+      return
+    }
+    setRightYear(e.target.value);
+  }
 
   useEffect(() => {
-    // ... (your existing code)
-  }, []);
+    setLeftYear('');
+    setRightYear('');
+  }, [])
 
   return (
     <div className='w-full h-full'>

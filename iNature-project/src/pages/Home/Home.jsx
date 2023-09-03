@@ -5,7 +5,10 @@ import { Link } from 'react-router-dom'
 import { services } from '../../constants'
 import ServiceCard from '../../components/ServiceCard/ServiceCard'
 import Footer from '../../components/Footer/Footer.jsx'
+import { ourStyles } from '../../styles'
 import { motion } from 'framer-motion'
+import { fadeIn, textVariant } from '../../utils/motion'
+import { Tilt } from 'react-tilt'
 
 
 export default function Home({ active, setActive }) {
@@ -34,10 +37,10 @@ export default function Home({ active, setActive }) {
       </section>
       {/* services section start ---> */}
 
-      <section id='serv' className={`w-full h-[680px] border-2 border-emerald-400`}>
+      <section id='serv' className={`w-full h-[700px] border-2 border-emerald-400`}>
 
         <div className={`w-[full] h-[10%] bg-neutral-950 flex justify-center items-center border-b border-emerald-400`}>
-          <h2 className='font-bold text-3xl  text-emerald-400'>
+          <h2 className={`text-3xl font-bold  text-emerald-400`}>
             <span>|| </span>
             OUR SERVICES!
             <span> ||</span>
@@ -51,15 +54,21 @@ export default function Home({ active, setActive }) {
 
         <div className={`${styles.serviceSec} h-[90%] flex flex-wrap gap-6 items-center justify-center`}>
 
-          <div className='h-[90%] flex flex-wrap gap-x-6 items-center justify-center'>
+          <div className='h-[90%] flex flex-wrap gap-x-20 items-center justify-center'>
             {services.map((service) => (
               <ServiceCard key={service.id} service={service} />
             ))}
           </div>
-          <div className='h-[10%] mt-[-30px] flex flex-col'>
-            <div className='w-[600px] '>
-              <Link to='/monitoring' className={`${styles.buttonServ} w-full  text-lg font-bold `} >Let's Monitor</Link>
-            </div>
+          <div className=' h-[10%] mt-[-40px] flex flex-col'>
+
+            <Tilt >
+              <motion.div variants={fadeIn('right', 'spring', 0.5, 0.75)} className='w-full'>
+                
+                  <Link
+                    to='/monitoring' className={`${styles.buttonServ} w-full p-2 px-5  text-xl font-bold `} >Let's Monitor</Link>
+               
+              </motion.div>
+            </Tilt>
           </div>
 
         </div>
@@ -81,10 +90,10 @@ export default function Home({ active, setActive }) {
 
         <div className={`${styles.aboutBanner} flex gap-4 w-full h-[85%] items-center justify-around px-10 py-5`}>
 
-          <div className={`${styles.aboutBox} border border-yellow-400 h-[300px] flex-1 `}>
+          <div className={`${styles.aboutBox} border border-yellow-400 h-[300px] flex-1 pl-5`}>
             <h2 className='text-4xl font-bold text-emerald-300'>Forest Monitoring System</h2>
             <br />
-            <p className={`${styles.textShadowBlack} text-xl text-emerald-400 `}>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet temporibus iste odio animi consequatur sequi consequuntur mollitia vel. ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. <br /><br /></p>
+            <p className={`${styles.textShadowBlack} text-xl text-emerald-400 `}>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet temporibus iste odio animi consequatur sequi consequuntur mollitia vel. ipsum dolor sit amet consectetur adipisicing elit. , voluptatum. <br /><br /></p>
             <button className={`${styles.button}`}>
               <Link to='/about' className={` text-lg font-bold `}>Read More</Link>
             </button>

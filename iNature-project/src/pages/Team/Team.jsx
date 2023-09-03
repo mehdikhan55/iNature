@@ -1,13 +1,154 @@
 import React from 'react'
+import { ourStyles } from '../../styles.js'
+import styles from './Team.module.css'
+import { motion } from "framer-motion";
+import { fadeIn, textVariant } from '../../utils/motion'
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from 'react-vertical-timeline-component';
+import { mehdiProfile } from '../../assets/index.js';
 
-export default function Team({active, setActive}) {
+import "react-vertical-timeline-component/style.min.css";
+
+
+
+
+export default function Team({ active, setActive }) {
   React.useEffect(() => {
     setActive("Team");
-  },[])
+  }, [])
 
   return (
-    <div>
-      Blog Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam culpa eius beatae. Unde, facere consequatur. Enim exercitationem vero, ipsum similique sunt tempore id nisi assumenda, libero dolorum soluta sit beatae ab dolorem? Esse temporibus recusandae sequi rem dolore culpa pariatur delectus? Fugiat omnis unde, at eaque expedita provident. Cum esse nemo, accusantium provident soluta voluptatem consectetur blanditiis mollitia autem eveniet repellendus quae quod ducimus similique pariatur sequi quo totam obcaecati labore eos dicta laudantium unde! Cupiditate et nostrum rerum at esse voluptates nam, accusamus maiores unde aliquid. Illum, consequatur ad quo quasi pariatur, cupiditate, at nihil optio qui excepturi nesciunt exercitationem aspernatur quisquam alias nulla magni maiores aliquam saepe? Neque asperiores optio ipsam veniam, voluptatibus vitae expedita sed incidunt obcaecati, voluptatum laudantium laboriosam sit error quas fugit! Id praesentium saepe quis omnis consequuntur esse earum ipsum error expedita magnam porro dolorem, harum, quo qui. Consequuntur totam delectus quaerat assumenda repudiandae a tenetur nihil. Veritatis, quidem soluta quo ad vitae quia reprehenderit dolore error eveniet quasi itaque dolores culpa cum aliquam expedita voluptatum quam deleniti nesciunt, suscipit asperiores reiciendis. Error aperiam accusantium quae tenetur nihil veritatis asperiores, quisquam quibusdam eius corporis! Sapiente voluptate distinctio ut inventore quo sunt aspernatur, ex debitis iure dolorum deleniti eius quidem dicta hic magni amet autem facilis nostrum similique. Natus, minus molestias exercitationem eaque culpa quam officia harum consequatur laborum sit aperiam alias blanditiis, repudiandae veritatis, delectus veniam nam maiores? Quaerat distinctio placeat eos? Repudiandae, quos mollitia qui eius, nesciunt doloribus ut accusamus repellendus, aliquid illo labore hic ducimus ex excepturi non asperiores esse suscipit. Veniam a voluptatem, sunt, at adipisci odio accusamus hic mollitia enim atque natus rem ex sint expedita, id voluptas molestias fugiat incidunt consequuntur labore. Eaque ipsa animi sit esse debitis, temporibus, minima aperiam error itaque quis, cupiditate sed ullam vero tenetur! Minima delectus voluptas omnis alias quos earum, unde modi sunt quibusdam ipsa odit. Cum excepturi molestias error eaque ab in nobis tempore! Tempore minus reprehenderit, aliquid libero animi recusandae dolorem excepturi? Aperiam illo velit ab omnis facilis incidunt commodi minima eaque voluptates. Error perspiciatis quaerat, nihil iure accusantium fugiat alias accusamus minima, similique vitae deleniti, explicabo pariatur corporis blanditiis aut et quibusdam exercitationem libero rem dignissimos architecto. Blanditiis laudantium at a quaerat fuga doloribus totam numquam quam commodi hic debitis, officia eveniet laborum? Deserunt eius soluta possimus aperiam veniam minus id omnis ipsum! Earum placeat eveniet aspernatur pariatur reprehenderit incidunt, sed nobis delectus harum corrupti aliquam quaerat dolore laborum officia expedita minima velit. Incidunt, commodi culpa aspernatur expedita qui dolor obcaecati eos unde quam magni molestiae laborum eaque ullam iure vel assumenda architecto cumque est sapiente voluptates corrupti corporis accusantium! Dolor non perferendis dolorum quod quia itaque aperiam rerum, rem omnis dolorem cupiditate delectus tempore voluptatum vel id est reiciendis ratione in perspiciatis, nemo quasi excepturi possimus exercitationem? Officiis, quae? Commodi voluptates tempore ducimus illo cum animi temporibus quaerat hic distinctio nulla quo magni ut ad quam suscipit porro itaque excepturi enim iste eius odit, earum, dignissimos doloribus. In dolores eos voluptatem laudantium, incidunt, amet aspernatur necessitatibus fuga quidem aliquam neque at fugiat consequatur repellat sed mollitia quasi illum! Eum reprehenderit, vitae necessitatibus ducimus optio laudantium dignissimos porro culpa impedit quas. Ab at officiis dolores cumque? Facere ea quisquam enim itaque, ipsum dicta praesentium expedita, debitis possimus, tenetur ullam libero omnis eligendi non. Exercitationem ad illo excepturi, quibusdam saepe officia! Perspiciatis magnam corporis adipisci quo provident aspernatur. Ad quos, dolore suscipit dolor molestias beatae corrupti ut dicta libero quisquam, numquam quod consequatur provident quasi a recusandae error, corporis sint nihil eveniet fugiat aliquam reiciendis reprehenderit cupiditate? Expedita atque id quam veniam sit tempore fugiat obcaecati commodi debitis quia maiores minus dolores perspiciatis magni, at sequi, voluptas adipisci iste odio ea. Expedita amet deserunt, ab blanditiis inventore vero est aut, obcaecati reiciendis, cumque quibusdam neque dolores accusantium assumenda nemo eius. Rem excepturi autem incidunt odio magni dignissimos eveniet temporibus perferendis? Porro ducimus vero accusantium laudantium in pariatur placeat corporis. Quod eum nobis culpa, sequi doloremque beatae rem iusto esse sunt tempore mollitia, ipsum incidunt, facilis maiores similique? Repudiandae hic rerum eaque suscipit vitae porro minima culpa soluta laborum, consectetur saepe quo commodi assumenda reiciendis exercitationem sint maxime! Voluptatibus ex fugit facilis sunt cupiditate perferendis quod, tempore libero commodi nobis architecto qui, in fugiat tenetur rem id? Quidem qui iure laborum ea iste quae, corrupti vitae modi eius harum consequatur. Quae enim necessitatibus veniam assumenda, obcaecati ea quidem consequuntur id est, velit sed labore corporis quaerat reprehenderit et officiis aut dolore, vero suscipit cumque minima nam laboriosam molestias! Reprehenderit vitae voluptatibus delectus ratione iste ea illo. Laboriosam possimus veritatis accusamus cumque sunt id deleniti libero dicta alias nam illum commodi culpa harum voluptatem laudantium necessitatibus inventore tenetur voluptas, voluptatibus quibusdam facilis distinctio quam. Esse assumenda nisi velit quas deserunt dolorem debitis ipsam molestias? Exercitationem nemo fuga dolorem repellendus totam repudiandae impedit nobis temporibus quis? Aliquam minus, tenetur ipsa harum veritatis atque ducimus sit rerum quibusdam vel enim eveniet ratione possimus consequuntur natus blanditiis unde in hic assumenda distinctio, eos mollitia cumque officiis! Aspernatur, voluptate delectus perspiciatis neque necessitatibus officiis possimus magnam eaque veniam expedita facilis mollitia commodi dicta adipisci saepe excepturi tempora sint ipsa modi molestiae cupiditate obcaecati! Ad consequuntur qui ex omnis, architecto, dolorum aperiam sunt aspernatur iure vitae optio veritatis doloremque deleniti suscipit hic corporis saepe ab voluptas officia ipsum doloribus aliquid perspiciatis! Dolorem, itaque repudiandae. Accusamus laboriosam impedit dolores fugiat inventore! Praesentium nulla unde illo voluptas debitis consectetur recusandae fugit! Neque doloribus, inventore quas, voluptates voluptatibus qui dolorum repellendus consectetur commodi sapiente possimus dicta maxime iusto ullam itaque reprehenderit ipsam magni officia nemo asperiores sint. Temporibus quidem accusantium earum quis, repellendus dolorum ratione molestias numquam rerum iste libero error illo ab iusto, laborum repellat unde sequi corrupti. Accusantium facilis modi quos deserunt expedita inventore.
-    </div>
+    <section className='h-[100%] w-full bg-primaryColor flex flex-col pt-28 gap-y-20'>
+
+      <div className=' flex gap-4 px-28'>
+
+        <div className=' flex flex-1 justify-end items-center'>
+          <div className='bg-green-500 h-full w-[60%] rounded-full border-3 border-black' />
+        </div>
+
+        <div className='flex flex-col'>
+          <div >
+            <h2 className={`${ourStyles.sectionHeadText}`}>Syed Zohaib Shah</h2>
+            <h3 className={`text-3xl text-gray-200  `}>Team Mentor</h3>
+          </div>
+
+          <p className='mt-4 text-secondaryColor text-[15px] max-w-3xl leading-[30px]' >
+            I'm a skilled software developer with experience in TypeScript and
+            JavaScript, and expertise in frameworks like React, Node.js, and
+            Three.js. I'm a quick learner and collaborate closely with clients to
+            create efficient, scalable, and user-friendly solutions that solve
+            real-world problems. Let's work together to bring your ideas to life!
+          </p>
+        </div>
+
+      </div>
+
+      <div>
+        <motion.div variants={textVariant()}>
+          <h2 className={`${ourStyles.sectionHeadText} text-center`}>
+            Our Team
+          </h2>
+        </motion.div>
+
+        <div className='mt-10 flex flex-col'>
+          <VerticalTimeline>
+            {experiences.map((experience, index) => (
+              <ExperienceCard
+                key={`experience-${index}`}
+                experience={experience}
+              />
+            ))}
+          </VerticalTimeline>
+        </div>
+
+      </div>
+
+    </section>
   )
 }
+
+
+const experiences = [
+  {
+    title: "Muhammad Mehdi Ali",
+    role: "Web Design and Development",
+    mainRole:"Team Lead",
+    iconBg: "green",
+    icon: '',
+  },
+  {
+    title: "Muhammad Khizer Ali",
+    role: "Structure",
+    icon: '',
+    iconBg: "#E6DEDD",
+
+  },
+  {
+    title: "Attique Ur Rehman",
+    role: "Graphics",
+    iconBg: "#383E56",
+    icon: '',
+
+  },
+  {
+    title: "Hassan Javed",
+    role: "Content",
+    iconBg: "#E6DEDD",
+    icon: '',
+
+  },
+  {
+    title: "Tanveer ",
+    role: "Content",
+    iconBg: "#383E56",
+    icon: '',
+
+  },
+];
+
+
+
+const ExperienceCard = ({ experience }) => {
+  return (
+    <VerticalTimelineElement
+      contentStyle={{
+        background: "#1d1836",
+        color: "#fff",
+      }}
+      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      iconStyle={{ background: experience.iconBg }}
+      date={experience.mainRole}
+      icon={
+        <div className='flex justify-center items-center w-full h-full'>
+
+        </div>
+      }
+    >
+      <div className='text-center'>
+        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <p
+          className='text-gray-200 text-[16px] font-semibold'
+          style={{ margin: 0 }}
+        >
+          {experience.role}
+        </p>
+      </div>
+
+      <div className={` ml-32 h-[300px] w-[300px] rounded-full`}>
+        <img src={mehdiProfile} alt="mehdiProfile" className='w-full h-full rounded-full'/>
+      </div>
+      {/* <ul className='mt-5 list-disc ml-5 space-y-2'>
+        {experience.points.map((point, index) => (
+          <li
+            key={`experience-point-${index}`}
+            className='text-white-100 text-[14px] pl-1 tracking-wider'
+          >
+            {point}
+          </li>
+        ))}
+      </ul> */}
+    </VerticalTimelineElement>
+  );
+};

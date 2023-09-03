@@ -8,7 +8,7 @@ import SingleAbbottabadMap from './SingleAbbottabadMap';
 import SingleLahoreMap from './SinglelLahoreMap';
 
 
-export default function SingleMap({ city, singleYear, setSingleYear }) {
+export default function SingleMap({ city,singleYear,setSingleYear }) {
   
  
 
@@ -19,13 +19,6 @@ export default function SingleMap({ city, singleYear, setSingleYear }) {
     }
     setSingleYear(e.target.value);
   }
-
-  useEffect(() => {
-    setSingleYear('');
-  }, [])
-
-
-
 
 
   return (

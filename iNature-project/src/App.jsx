@@ -14,7 +14,7 @@ export default function App() {
   const [active, setActive] = useState("Home");
 
   return (
-    <div className=" w-full p-0 ">
+    <div className=" w-full p-0 h-full">
       <Navbar active={active} setActive={setActive}/>
       <Routes>
         <Route path='/' element={<Home  active={active} setActive={setActive}/>} />
