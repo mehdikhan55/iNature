@@ -11,11 +11,7 @@ export const navLinks=[
       title: "Monitor",
       path:"/monitoring"
     },
-    {
-        id:'about',
-        title:'About',
-        path:"/about"
-    },
+    
     {
         id:'team',
         title:'Team',

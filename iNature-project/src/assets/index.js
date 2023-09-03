@@ -12,6 +12,8 @@ import soil from './img/soil.jpg'
 import sunEarth from './img/sun-earth.jpg'
 import train from './img/train.jpg'
 import mehdiProfile from './img/mehdiProfile.jpg'
+import attiqueProfile from './img/attiqueProfile.jpeg'
+import khizerProfile from './img/khizerProfile.jpg'
 
 export{
     logo,
@@ -27,6 +29,8 @@ export{
     soil,
     sunEarth,
     train,
-    mehdiProfile
+    mehdiProfile,
+    attiqueProfile,
+    khizerProfile
     
 }

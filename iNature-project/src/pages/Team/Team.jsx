@@ -7,7 +7,8 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
-import { mehdiProfile } from '../../assets/index.js';
+import { khizerProfile, mehdiProfile } from '../../assets/index.js';
+import { attiqueProfile } from '../../assets/index.js';
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -22,25 +23,23 @@ export default function Team({ active, setActive }) {
   return (
     <section className='h-[100%] w-full bg-primaryColor flex flex-col pt-28 gap-y-20'>
 
-      <div className=' flex gap-4 px-28'>
+      <div className='align-self-center'>
+        <div className=' flex gap-4'>
 
-        <div className=' flex flex-1 justify-end items-center'>
-          <div className='bg-green-500 h-full w-[60%] rounded-full border-3 border-black' />
-        </div>
-
-        <div className='flex flex-col'>
-          <div >
-            <h2 className={`${ourStyles.sectionHeadText}`}>Syed Zohaib Shah</h2>
-            <h3 className={`text-3xl text-gray-200  `}>Team Mentor</h3>
+          <div className=' flex flex-1 justify-end items-center'>
+            <div className='bg-green-500 h-[270px] w-[270px] rounded-full border-3 border-black' />
           </div>
 
-          <p className='mt-4 text-secondaryColor text-[15px] max-w-3xl leading-[30px]' >
-            I'm a skilled software developer with experience in TypeScript and
-            JavaScript, and expertise in frameworks like React, Node.js, and
-            Three.js. I'm a quick learner and collaborate closely with clients to
-            create efficient, scalable, and user-friendly solutions that solve
-            real-world problems. Let's work together to bring your ideas to life!
-          </p>
+          <div className='flex flex-col mt-3'>
+            <div >
+              <h2 className={`${ourStyles.sectionHeadText}`}>Syed Zohaib Shah</h2>
+              <h3 className={`text-3xl text-gray-200  `}>Team Mentor</h3>
+            </div>
+
+            <p className='mt-4 text-secondaryColor text-[15px] max-w-3xl leading-[30px]' >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima, ea blanditiis quia, magnam neque architecto soluta harum porro illo nisi ab veniam temporibus libero quis! Eum eveniet odio accusamus consequuntur voluptatum velit cupiditate qui quae cupiditate dolor? Doloribus pariatur ab deserunt
+            </p>
+          </div>
         </div>
 
       </div>
@@ -74,14 +73,14 @@ const experiences = [
   {
     title: "Muhammad Mehdi Ali",
     role: "Web Design and Development",
-    mainRole:"Team Lead",
+    mainRole: "Team Lead",
     iconBg: "green",
-    icon: '',
+    icon: mehdiProfile,
   },
   {
     title: "Muhammad Khizer Ali",
     role: "Structure",
-    icon: '',
+    icon: khizerProfile,
     iconBg: "#E6DEDD",
 
   },
@@ -89,7 +88,7 @@ const experiences = [
     title: "Attique Ur Rehman",
     role: "Graphics",
     iconBg: "#383E56",
-    icon: '',
+    icon: attiqueProfile,
 
   },
   {
@@ -120,6 +119,7 @@ const ExperienceCard = ({ experience }) => {
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       iconStyle={{ background: experience.iconBg }}
       date={experience.mainRole}
+      dateStyle={{ color: "white" }}
       icon={
         <div className='flex justify-center items-center w-full h-full'>
 
@@ -136,8 +136,8 @@ const ExperienceCard = ({ experience }) => {
         </p>
       </div>
 
-      <div className={` ml-32 h-[300px] w-[300px] rounded-full`}>
-        <img src={mehdiProfile} alt="mehdiProfile" className='w-full h-full rounded-full'/>
+      <div className={` ml-20 h-[300px] w-[300px] rounded-full mt-3`}>
+        <img src={experience.icon} alt="mehdiProfile" className='w-full h-full rounded-full object-cover' />
       </div>
       {/* <ul className='mt-5 list-disc ml-5 space-y-2'>
         {experience.points.map((point, index) => (

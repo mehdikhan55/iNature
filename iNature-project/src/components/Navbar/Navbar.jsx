@@ -9,7 +9,7 @@ import MobileNavbar from '../MobileNavbar/MobileNavbar'
 export default function Navbar({active,setActive}) {
 
   return (
-    <nav className={`${styles.navbar} px-6 w-full flex items-center py-[12px] fixed top-0 border  border-emerald-500 z-1`}>
+    <nav className={`${styles.navbar} px-6 w-full flex items-center py-[12px] fixed top-0 border-y  border-emerald-500 z-1`}>
 
       <div className='w-full flex items-center justify-between gap-5 max-w-7xl mx-auto'>
 
