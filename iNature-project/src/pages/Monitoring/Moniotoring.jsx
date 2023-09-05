@@ -41,14 +41,14 @@
     }
 
     return (
-      <div className='w-full h-[100vh] position-absolute bg-red-600 flex-col mt-20 z-10'>
+      <div className='w-full h-[100vh] position-absolute bg-red-600 flex-col  z-10'>
 
         {
           showPreviewModal && <PreviewModal previewMode={previewMode} setPreviewMode={setPreviewMode} togglePreviewModal={togglePreviewModal} showPreviewModal={showPreviewModal} setShowPreviewModal />
         }
 
         {/* controls area start  */}
-        <div className="flex h-[8%] justify-between bg-blue-500">
+        <div className="flex h-[8%] justify-between bg-blue-500 ">
           <div className="flex w-[40%]  p-2 align-items-center gap-1">
             <select onChange={handleCityChange} className='w-[60%] bg-emerald-400 border-2 rounded border-black' name="citySelection" id="citySelection" >
               <option value="karachi" >Karachi</option>

@@ -18,7 +18,7 @@ export default function Home({ active, setActive }) {
 
   return (
     <>
-      <section className={` w-full h-[500px] border border-emerald-400`}>
+      <section className={` w-full h-[500px] `}>
 
         <div className={`${styles.main} w-full h-full flex`}>
 
@@ -37,9 +37,9 @@ export default function Home({ active, setActive }) {
       </section>
       {/* services section start ---> */}
 
-      <section id='serv' className={`w-full h-[700px] border-2 border-emerald-400`}>
+      <section id='serv' className={`w-full h-[700px] `}>
 
-        <div className={`w-[full] h-[10%] bg-neutral-950 flex justify-center items-center border-b border-emerald-400`}>
+        <div className={`w-[full] h-[10%] bg-neutral-950 flex justify-center items-center border-y border-emerald-400`}>
           <h2 className={`text-3xl font-bold  text-emerald-400`}>
             <span>|| </span>
             OUR SERVICES!
@@ -77,9 +77,9 @@ export default function Home({ active, setActive }) {
       {/* services section end ---> */}
 
       {/* about banner start ---> */}
-      <section className={`w-full h-[450px] border-2 border-yellow-300 `}>
+      <section className={`w-full h-[550px] `}>
 
-        <div className={`w-[full] h-[15%] bg-neutral-950 flex justify-center items-center border-b border-yellow-300`}>
+        <div className={`w-[full] h-[15%] bg-neutral-950 flex justify-center items-center border-y border-yellow-200`}>
           <h2 className='font-bold text-3xl  text-yellow-300'>
             <span>||
             </span>
@@ -90,24 +90,24 @@ export default function Home({ active, setActive }) {
 
         <div className={`${styles.aboutBanner} flex gap-4 w-full h-[85%] items-center justify-around px-10 py-5`}>
 
-          <div className={`${styles.aboutBox} border border-yellow-400 h-[300px] flex-1 pl-5`}>
+          <div className={`${styles.aboutBox}  h-[300px] flex-1 pl-5`}>
             <h2 className='text-4xl font-bold text-emerald-300'>Forest Monitoring System</h2>
             <br />
             <p className={`${styles.textShadowBlack} text-xl text-emerald-400 `}>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet temporibus iste odio animi consequatur sequi consequuntur mollitia vel. ipsum dolor sit amet consectetur adipisicing elit. , voluptatum. <br /><br /></p>
-            <button className={`${styles.button}`}>
-              <Link to='/about' className={` text-lg font-bold `}>Read More</Link>
+            <button className={`${styles.button} px-3 py-4`}>
+              <Link to='/about' className={` font-bold `}>Read More</Link>
             </button>
           </div>
 
           <div className='bg--500 h-[300px] flex-1'>
-            SVG HERE
+            
           </div>
 
         </div>
 
       </section>
       {/* footer start ---> */}
-      <section className={`w-full h-fit  bg-black border-2 border-white`}>
+      <section className={`w-full h-fit  bg-black border-y border-black`}>
         <Footer />
       </section>
 
