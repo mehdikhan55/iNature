@@ -79,8 +79,8 @@ export default function Home({ active, setActive }) {
       {/* about banner start ---> */}
       <section className={`w-full h-[550px] `}>
 
-        <div className={`w-[full] h-[15%] bg-neutral-950 flex justify-center items-center border-y border-yellow-200`}>
-          <h2 className='font-bold text-3xl  text-yellow-300'>
+        <div className={`w-[full] h-[15%] bg-neutral-950 flex justify-center items-center border-t border-emerald-400`}>
+          <h2 className='font-bold text-3xl  text-gray-100'>
             <span>||
             </span>
             ABOUT THE PROJECT
