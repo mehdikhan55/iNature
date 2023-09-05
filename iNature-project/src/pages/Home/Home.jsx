@@ -20,17 +20,13 @@ export default function Home({ active, setActive }) {
     <>
       <section className={` w-full h-[500px] `}>
 
-        <div className={`${styles.main} w-full h-full flex`}>
+        <div className={`${styles.main} w-full h-full flex `}>
 
-          <div className={`${styles.textShadow} ${styles.mainSection}  w-1/2 h-full flex flex-col justify-center items-start pt-16 pl-32 ${styles.mainHeading} text-emerald-400 `}>
-            <h1 className={`text-6xl font-bold `}>Welcome to<br /><span className={`text-emerald-400`}>Forest</span> Monitoring Application</h1>
-            <p className={`text-2xl mt-5 font-extrabold text-shadow-white`}>Find your location and explore the world</p>
+          <div className={`${styles.textShadow} ${styles.mainSection} w-full  h-full flex flex-col justify-center items-start pt-16 sm:pl-32 pl-12 ${styles.mainHeading} text-emerald-400  `}>
+            <h1 className={`sm:text-6xl text-5xl font-bold `}>Welcome to<br /><span className={`text-emerald-400`}>Forest</span> Monitoring <br />Application</h1>
+            <p className={`text-2xl mt-5 font-extrabold text-shadow-white text-wrap`}>Find your location and explore the world</p>
           </div>
-          <div className={`w-1/2 ${styles.mainSection} relative`}>
-
-
-          </div>
-
+          
 
         </div>
 
